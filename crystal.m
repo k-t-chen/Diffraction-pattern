@@ -1,14 +1,14 @@
 global a lam_min lam_max f_Al a1 a2 a3 A
-a = 4.050; % angstrom
-lam_min = 0.6; % angstrom
-lam_max = 1.1; % angstrom
-f_Al = 13; % -
+a = 4.050; 
+lam_min = 0.6; 
+lam_max = 1.1; 
+f_Al = 13; 
 a1 = [1, -1, 1];
 a2 = [1, 1, 0];
 a3 = [-1, 1, 2];
 A = [a1',a2',a3'];
  
-L = 3; % camera length, cm
+L = 3; 
 n = 8; % initial guess on the max of Miller indices 
 KK = [n, n, n];
 while (n - max(abs(max(KK)))) <= 1e-6
